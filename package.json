@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:group1": "VITE_COMMUNITY=group1 vite build",
+    "build:group2": "VITE_COMMUNITY=group2 vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
