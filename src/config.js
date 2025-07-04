@@ -3,8 +3,11 @@
 import config2 from './configDropEverything.json';
 import configDropEverything from './configDropEverything.json';
 
-const hostname = window.location.hostname;
+//TODO figure out a way to import with multiple cloudflares. Looks like command line arg should be used to to decide the config file
 
-const config = hostname.includes('local') ? config2 : config1;
+//const hostname = window.location.hostname;
+
+//const config = hostname.includes('local') ? config2 : config1;
+const config =  config1;
 export default config;
 
