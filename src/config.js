@@ -8,6 +8,6 @@ import configDropEverything from './configDropEverything.json';
 //const hostname = window.location.hostname;
 
 //const config = hostname.includes('local') ? config2 : config1;
-const config =  config1;
+const config =  config2;
 export default config;
 
