@@ -42,8 +42,10 @@
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+/*  background-color: #f9f9f9;*/
+  background-color: white;
+  color: #222;
+/*  color: #333;*/
   margin: 0;
 }
 h1, h2 {
