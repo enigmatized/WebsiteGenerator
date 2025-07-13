@@ -7,17 +7,22 @@ import BookReader from './BookReader';
 import config from './config';
 
 
+//To add Tabs Add here
+//To Add Custom tabs that are webpage dependent then put in if statement
+//You may need more custom logic if you want fancier ordering
+const tabs = ['Home']; //, 'About', 'Commonly Asked Questions','Meeting Schedule', 'Contact'];
+if (config.about)  tabs.push('About');
+// Add fixed items in bulk
+tabs.push(
+  'Commonly Asked Questions',
+  'Meeting Schedule',
+  'Contact'
+);
+if (config.support) tabs.push('Support Project');
+if (config.books && config.books.length) tabs.push('Literature'); 
 
-//TODO Add how it works to Commonly asked questions
-const tabs = ['Home', 'About', 'Commonly Asked Questions','Meeting Schedule', 'Contact'];
-if (config.support) {
-  tabs.push('Support Project');
-}
-if (config.bookFile) {
-  tabs.push('Book');
-}
 
-
+//Calendar Div
 const Calendar = ({ calendarUrl }) => {
   return calendarUrl ? (
     <div> <iframe
@@ -33,6 +38,36 @@ const Calendar = ({ calendarUrl }) => {
   );
 };
 
+
+//Literature Div
+function Literature({ books }) {
+  // pick the book whose `default` === true, else first book
+  const [current, setCurrent] = useState(
+    books.find(b => b.default) || books[0]
+  );
+
+  return (
+    <div>
+      <p>Select a Literature:</p>
+
+      {books.map((b, i) => (
+        <label key={b.file} style={{display:"block",marginBottom:4}}>
+          <input
+            type="radio"
+            name="book"
+            checked={current.file === b.file}
+            onChange={() => setCurrent(b)}
+          />
+          {b.label}
+        </label>
+      ))}
+
+      <div style={{marginTop:20}}>
+        <BookReader file={`/${current.file}`} />
+      </div>
+    </div>
+  );
+};
 
 
 
@@ -51,7 +86,7 @@ const getTabContent = (tab) => {
       case 'Contact': return <div dangerouslySetInnerHTML={{ __html: config.contact  || 'Not found.' }} />;
       case 'Commonly Asked Questions': return <div dangerouslySetInnerHTML={{ __html:  config.commonQuestions || 'Not found.' }} />; 
       case 'Meeting Schedule': return <Calendar calendarUrl={ config.googleIframe } />; 
-      case 'Book': return <BookReader file={`/${config.bookFile}`} />;
+      case 'Literature': return <Literature books={config.books} />; // return <BookReader file={`/${config.bookFile}`} />;
       case 'Support Project': return <div dangerouslySetInnerHTML={{ __html: config.support  || 'Not found.' }} />;
 
       default: return 'Page not found.';
