@@ -22,6 +22,44 @@ if (config.support) tabs.push('Support Project');
 if (config.books && config.books.length) tabs.push('Literature'); 
 
 
+const ZoomLinks = ({ links }) => {
+  if (!links || links.length === 0) return null;
+
+  return (
+    <div style={{ marginTop: 20 }}>
+      <h3>Zoom Links</h3>
+      <ul>
+        {links.map((z, i) => (
+          <li key={i} style={{ marginBottom: 8 }}>
+            <strong>{z.label}:</strong>{' '}
+            <a href={z.link} target="_blank" rel="noopener noreferrer">
+              {z.link}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const Calendar2 = ({ calendarUrl, zoomLinks }) => {
+  return calendarUrl ? (
+    <div>
+      <iframe
+        title="Meeting Schedule"
+        src={calendarUrl}
+        style={{ border: 0, width: '100%', height: 600 }}
+        frameBorder="0"
+        scrolling="no"
+        loading="lazy"
+      />
+      {zoomLinks}
+    </div>
+  ) : (
+    <p>No calendar available for this community.</p>
+  );
+};
+
 //Calendar Div
 const Calendar = ({ calendarUrl }) => {
   return calendarUrl ? (
@@ -85,8 +123,14 @@ const getTabContent = (tab) => {
       case 'How It Works' : return  config.howitworks;
       case 'Contact': return <div dangerouslySetInnerHTML={{ __html: config.contact  || 'Not found.' }} />;
       case 'Commonly Asked Questions': return <div dangerouslySetInnerHTML={{ __html:  config.commonQuestions || 'Not found.' }} />; 
-      case 'Meeting Schedule': return <Calendar calendarUrl={ config.googleIframe } />; 
-      case 'Literature': return <Literature books={config.books} />; // return <BookReader file={`/${config.bookFile}`} />;
+      case 'Meeting Schedule':
+  return (
+    <Calendar2
+      calendarUrl={config.googleIframe}
+      zoomLinks={<ZoomLinks links={config.zoom} />}
+    />
+  );
+	    case 'Literature': return <Literature books={config.books} />; // return <BookReader file={`/${config.bookFile}`} />;
       case 'Support Project': return <div dangerouslySetInnerHTML={{ __html: config.support  || 'Not found.' }} />;
 
       default: return 'Page not found.';

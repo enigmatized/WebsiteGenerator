@@ -18,5 +18,12 @@
     }
   ],
   "googleIframe" : "https://calendar.google.com/calendar/embed?src=drop.all.addictions.fellowship%40gmail.com&ctz=America%2FLos_Angeles",
-  "support": "<p>The best way you can support us is to show up and practice. If you feel like the community has helped you out and want to give back, you can give time, finances, or support to other members of the community. If you are intrested for ways of being service, reach out. Below are ways of financial supporting this project.</p> <p><a href=\"https://venmo.com/code?user_id=2411422080303104602&amp;created=1737400581\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"blue\">Fund via Venmo</a> </p> <p> <a href=\"https://www.paypal.com/ncp/payment/UZKTZMH6NNMCG\" target=\"_blank\" rel=\"noopener noreferrer\"> Fund via PayPal </a> </p>"
+  "support": "<p>The best way you can support us is to show up and practice. If you feel like the community has helped you out and want to give back, you can give time, finances, or support to other members of the community. If you are intrested for ways of being service, reach out. Below are ways of financial supporting this project.</p> <p><a href=\"https://venmo.com/code?user_id=2411422080303104602&amp;created=1737400581\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"blue\">Fund via Venmo</a> </p> <p> <a href=\"https://www.paypal.com/ncp/payment/UZKTZMH6NNMCG\" target=\"_blank\" rel=\"noopener noreferrer\"> Fund via PayPal </a> </p>",
+   "zoom": [
+  { 
+    "label": "Zoom link for all meetings",
+    "link": "https://us06web.zoom.us/j/5620489534",
+    "default": true
+  }
+]
 }

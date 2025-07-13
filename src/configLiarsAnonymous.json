@@ -13,5 +13,16 @@
     }
   ],
   "googleIframe" : "https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=bGlhcnMuYW5vbnltb3VzLmZlbGxvd3NoaXBAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043",
-  "support": "<p>The best way you can support us is to show up and keep showing up. If you feel like the community has helped you out and want to give back, you can give time, in the form of service. Help out a meeting. Also ask around for the next business meeting, we can use your support in many ways."
+  "support": "<p>The best way you can support us is to show up and keep showing up. If you feel like the community has helped you out and want to give back, you can give time, in the form of service. Help out a meeting. Also ask around for the next business meeting, we can use your support in many ways.",
+  "zoom": [
+  {
+    "label": "Zoom link for(almost) all meetings",
+    "link": "https://us02web.zoom.us/j/8254751619?pwd=ajVtMm1hVFFjeWsrb2VtVFhYTUZ1dz09",
+    "default": true
+  },
+  {
+    "label": "Thursday's LGBTQ meeting — Password: 3a1cru",
+    "link": "https://us06web.zoom.us/j/7573397592?pwd=RwfiKN12LZwhzCUDSEubER8vg5OH2w.1"
+  }
+]
 }

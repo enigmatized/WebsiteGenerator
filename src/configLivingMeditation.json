@@ -16,5 +16,12 @@
       "label": "Tools Focused Book (What We do)",
       "file" : "Dropping All Addictions_ First 30 Days(Dra - Garrett Peuse.epub"
     }
-  ]
+  ],
+   "zoom": [
+  {
+    "label": "Zoom link for all meetings",
+    "link": "https://us06web.zoom.us/j/5620489534",
+    "default": true
+  }
+]
 }
