@@ -18,6 +18,7 @@ tabs.push(
   'Meeting Schedule',
   'Contact'
 );
+if (config.stepsAndTraditions) tabs.push('12 Traditions and Steps');
 if (config.support) tabs.push('Support Project');
 if (config.books && config.books.length) tabs.push('Literature'); 
 
@@ -122,6 +123,7 @@ const getTabContent = (tab) => {
       case 'About': return <div dangerouslySetInnerHTML={{ __html: config.about  || 'Not found.' }} />;
       case 'How It Works' : return  config.howitworks;
       case 'Contact': return <div dangerouslySetInnerHTML={{ __html: config.contact  || 'Not found.' }} />;
+      case '12 Traditions and Steps': return <div dangerouslySetInnerHTML={{ __html: config.stepsAndTraditions  || 'Not found.' }} />;
       case 'Commonly Asked Questions': return <div dangerouslySetInnerHTML={{ __html:  config.commonQuestions || 'Not found.' }} />; 
       case 'Meeting Schedule':
   return (
