@@ -10,10 +10,36 @@
       "label": "AA's 12x12 Steps Transcribed for Liars",
       "file" : "liar12and12.epub",
       "default": true          
+    },
+    {
+      "label": "A Word To The Newcomer",
+      "file" : "AWordToTheNewcomer.epub"
+    },
+    {
+      "label": "How It Works",
+      "file" : "HowItWorks.epub"
+    },
+    {
+      "label": "L.A.'s Responsibility Statement",
+      "file" : "L.A.'s Responsibility Statement.epub"
+    },
+    {
+      "label": "Preamble",
+      "file" : "Preamble.epub"
+    },
+    {
+      "label": "Safety Statement",
+      "file" : "SafetyStatement.epub"
     }
+
+
+
+
+
   ],
+  
   "googleIframe" : "https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=bGlhcnMuYW5vbnltb3VzLmZlbGxvd3NoaXBAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043",
-  "support": "<p>The best way you can support us is to show up and keep showing up. If you feel like the community has helped you out and want to give back, you can give time, in the form of service. Help out a meeting. Also ask around for the next business meeting, we can use your support in many ways.",
+  "support": "<p>The best way you can support us is to show up, keep showing up and get honest. Honesty is contagious. Sharing honesty at meetings is a form of service in itself. If you feel like the community has helped you out and want to give back, you can give time, in the form of service. Help out a meeting, host a meeting. Also ask around for the next business meeting, we can use your support in many ways.",
   "stepsAndTraditions" : "<div><h2>12 Traditions of Liars Anonymous</h2><ol><li>Our common welfare should come first; personal recovery depends upon LA unity.</li><li>For our group purpose there is but one ultimate authority, a loving Higher Power whose expression may come through in our group conscience. Our leaders are but trusted servants; they do not govern.</li><li>The only requirement for membership is a desire to stop lying.</li><li>Each group should be autonomous except in matters affecting other groups or LA as a whole.</li><li>Each group has but one primary purpose, to carry its message to the lying addict who still suffers.</li><li>LA groups ought never endorse, finance, or lend the LA name to any related facility or outside enterprise, lest problems of money, property, and prestige divert us from our primary purpose.</li><li>Every LA group ought to be fully self-supporting, declining outside contributions.</li><li>Liars Anonymous should remain forever nonprofessional.</li><li>LA, as such, ought never be organized, but we may create service boards or committees directly responsible to those they serve.</li><li>Liars Anonymous has no opinion on outside issues; hence the LA name ought never be drawn into public controversy.</li><li>Our public relations policy is based upon attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio, TV, film and other public media. We need guard with special care the anonymity of all fellow LA members.</li><li>Anonymity is the spiritual foundation of all our traditions, ever reminding us to place principles before personalities.</li></ol><h2>12 Steps of Liars Anonymous</h2><ol><li>We admitted we were powerless over dishonesty, that our lives had become unmanageable.</li><li>Came to believe that a Power greater than ourselves could restore us to sanity.</li><li>Made a decision to turn our will and our lives over to the care of a Higher Power, as we understood a Higher Power.</li><li>Made a searching and fearless moral inventory of ourselves.</li><li>Admitted to our Higher Power, to ourselves, and to another human being the exact nature of our wrongs.</li><li>Were entirely ready to have our Higher Power remove all these defects of character.</li><li>Humbly asked our Higher Power to remove our shortcomings.</li><li>Made a list of all persons we had harmed, and became willing to make amends to them all.</li><li>Made direct amends to such people wherever possible, except when to do so would injure them or others.</li><li>Continued to take personal inventory and when we were wrong, promptly admitted it.</li><li>Sought through prayer and meditation to improve our conscious contact with our Higher Power, as we understood our Higher Power, praying only for knowledge of our Higher Power's will for us and the power to carry that out.</li><li>Having had a spiritual awakening as a result of these steps, we tried to carry this message to liars and to practice these principles in all our affairs.</li></ol></div>",
   "zoom": [
   {

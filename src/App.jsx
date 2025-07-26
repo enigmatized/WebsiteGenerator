@@ -3,7 +3,7 @@ import { useState } from 'react'
 //import viteLogo from '/vite.svg'
 import './App.css'
 import BookReader from './BookReader';
-
+import GoogleCalendar from "./CalendarExport";
 import config from './config';
 
 
@@ -125,11 +125,10 @@ const getTabContent = (tab) => {
       case 'Contact': return <div dangerouslySetInnerHTML={{ __html: config.contact  || 'Not found.' }} />;
       case '12 Traditions and Steps': return <div dangerouslySetInnerHTML={{ __html: config.stepsAndTraditions  || 'Not found.' }} />;
       case 'Commonly Asked Questions': return <div dangerouslySetInnerHTML={{ __html:  config.commonQuestions || 'Not found.' }} />; 
-      case 'Meeting Schedule':
-  return (
-    <Calendar2
-      calendarUrl={config.googleIframe}
-      zoomLinks={<ZoomLinks links={config.zoom} />}
+	    case 'Meeting Schedule' : return (
+    <GoogleCalendar
+      srcBase={config.googleIframe}
+      defaultTz="America/Chicago"
     />
   );
 	    case 'Literature': return <Literature books={config.books} />; // return <BookReader file={`/${config.bookFile}`} />;
