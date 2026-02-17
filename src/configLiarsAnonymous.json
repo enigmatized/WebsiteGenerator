@@ -27,10 +27,15 @@
       "label": "Preamble",
       "file" : "Preamble.epub"
     },
+        {
+      "label": "Daily Inventory",
+      "file" : "10thStepForLAWebsite.epub"
+    },
     {
       "label": "Safety Statement",
       "file" : "SafetyStatement.epub"
     }
+
 
 
 
