@@ -1,4 +1,11 @@
-# React + Vite
+## To future self
+1. You run multiple websites from this, so to change the website, for example LA's website, you just change the `configLiarsAnonymous.json` 
+2. To run locally (I honestly forgot how to do that correctly)
+3. To run locally the bad way
+- `npm run build:liar`
+- then `npm run preview`
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
